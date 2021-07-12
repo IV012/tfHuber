@@ -39,7 +39,7 @@ theta, tau, iteration = tf.two_step_reg(X, Y, tol=1e-5, consTau=1.345, max_iter=
 ```
 
 ## License
-GPL (>= 2)
+GPL (>= 3)
 
 ## Author(s)
 
