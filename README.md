@@ -19,7 +19,7 @@ wheel
 
 There are four functions in this package: 
 
-* `mean(X, grad=True, tol=1e-5, max_iter=500)`: Huber mean estimation. Return a tuple of mean, $\tau$ and the number of iteration.  
+* `mean(X, grad=True, tol=1e-5, max_iter=500)`: Huber mean estimation. Return a tuple of mean, &tau and the number of iteration.  
 *X*: A 1-d array.  
 *grad*: Using gradient descent or weighed least square to optimize the mean, default *True*  
 *tol*: Tolerance of the error, default *1e-5*.  
@@ -32,16 +32,16 @@ There are four functions in this package:
 *max_iter*: Maximum times of iteration, default *500*.
 * `one_step_reg(X, Y, grad=True, tol=1e-5, max_iter=500
 two_step_reg(X, Y, grad=True, tol=1e-5, constTau=1.345, max_iter=500)`   
-One or two step adaptive Huber regression. Return a tuple of coefficients, $\tau$ and the number of iteration.   
+One or two step adaptive Huber regression. Return a tuple of coefficients, &tau and the number of iteration.   
 *X, Y*: Arrays of data.  
 *grad*: Using gradient descent or weighed least square to optimize the mean, default *True*.  
 *tol*: Tolerance of the error, default *1e-5*.  
 *constTau*: Default 1.345. Used only in two-step method.  
 *max_iter*: Maximum times of iteration, default *500*.  
-* `cvlasso(X, Y, lSeq=0, nlambda=30, constTau=2.5, phi0=0.001, gamma=1.5, tol=0.001, nfolds=3)`: K-fold cross validated Huber-lasso regression. Return a tuple of coefficients, $tau$, the number of iteration and minimun of $\lambda$.   
+* `cvlasso(X, Y, lSeq=0, nlambda=30, constTau=2.5, phi0=0.001, gamma=1.5, tol=0.001, nfolds=3)`: K-fold cross validated Huber-lasso regression. Return a tuple of coefficients, $tau$, the number of iteration and minimun of &lambda.   
 *X, Y*: Arrays of data.  
-*lSeq*: A list of Lasso parameter $\lambda$. If not set, automatically find a range of $\lambda$ to be cross validated.  
-*nlambda*: The number of $\lambda$ used for validation.  
+*lSeq*: A list of Lasso parameter &lambda . If not set, automatically find a range of &lambda to be cross validated.  
+*nlambda*: The number of &lambda used for validation.  
 *constTau, phi0, gamma*: Some parameters.  
 *tol*: Tolerance of the error, default *0.001*.  
 *nfolds*: Number of folds to be cross validated.
