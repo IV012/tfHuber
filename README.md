@@ -41,7 +41,7 @@ One or two step adaptive Huber regression. Return a tuple of coefficients, &tau 
 * `cvlasso(X, Y, lSeq=0, nlambda=30, constTau=2.5, phi0=0.001, gamma=1.5, tol=0.001, nfolds=3)`: K-fold cross validated Huber-lasso regression. Return a tuple of coefficients, tau, the number of iteration and minimun of lambda.   
 *X, Y*: Arrays of data.  
 *lSeq*: A list of Lasso parameter lambda . If not set, automatically find a range of &lambda to be cross validated.  
-*nlambda*: The number of &lambda used for validation.  
+*nlambda*: The number of lambda used for validation.  
 *constTau, phi0, gamma*: Some parameters.  
 *tol*: Tolerance of the error, default *0.001*.  
 *nfolds*: Number of folds to be cross validated.
